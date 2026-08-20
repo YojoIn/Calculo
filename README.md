@@ -1,23 +1,18 @@
-# Presupuesto PWA V3
+# Presupuesto PWA V4.4
 
-Aplicación PWA 100% offline.
+Versión para GitHub Pages conectada a Supabase.
 
-## Incluye
-- IndexedDB para almacenamiento local de los datos.
-- Búsqueda por descripción/categoría.
-- Edición y eliminación de movimientos.
-- PIN local de 4 a 8 dígitos.
-- Copias de seguridad JSON manuales y recordatorio automático semanal.
-- Restauración de copias.
-- CSV del mes.
-- Service Worker y PWA instalable.
-- Sin CDN, API, servidor ni conexión necesaria para operar.
+Cambios V4.4:
+- Nombre visible: **Vale Alimentacion**.
+- Nuevo gráfico de **Cargas vs Descuentos** del Vale Alimentacion del mes seleccionado.
+- Las operaciones del vale ahora se muestran como Carga y Descuento.
+- Sección **Categorías** con botón Mostrar/Ocultar, oculta por defecto para ahorrar espacio en móviles.
+- Caché del Service Worker actualizado para forzar la nueva versión.
 
-## GitHub Pages
-Sube `index.html`, `manifest.webmanifest`, `sw.js`, `icons/` y `README.md` a la raíz del repositorio. Activa Settings > Pages > Deploy from a branch > main > / (root).
+Mantiene la conexión de Supabase y el PIN de administrador configurados en la V4.2.
 
-## Importante sobre el PIN
-El PIN protege la interfaz de la aplicación. Los datos permanecen en IndexedDB y **no están cifrados**. Si necesitas protección criptográfica real, la siguiente versión puede cifrar la base local con una clave derivada del PIN.
+## Publicación
+Reemplaza los archivos del repositorio de GitHub Pages por los archivos de este paquete y espera a que GitHub Pages publique los cambios.
 
-## Copias automáticas
-El navegador no permite que una PWA normal descargue archivos automáticamente cada semana sin interacción del usuario. V3 guarda la fecha de la última copia y muestra un aviso cuando corresponde. La copia se crea al pulsar `Copia ahora`.
+
+V4.4: listas de ingresos, gastos y movimientos de Vale Alimentacion ahora tienen Mostrar/Ocultar para ahorrar espacio en móviles.
